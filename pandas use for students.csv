@@ -1,0 +1,22 @@
+import pandas as pd
+df= pd.read_csv('D:\python\student.csv')
+print(df)
+
+mean_marks = df['mark'].mean()
+print(mean_marks)
+
+total_marks = df['mark'].sum()
+print(total_marks)
+
+max_marks = df['mark'].max()
+print(max_marks)
+
+count_marks = df['mark'].count()
+print(count_marks)
+
+median_marks = df['mark'].median()
+print(median_marks)
+
+groupby_gender = df.groupby(['gender']).count()
+print(groupby_gender)
+
